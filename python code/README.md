@@ -1,3 +1,6 @@
+c_special.txt:
+The 13-bit challenges, which are split into two values to be transmitted by nodejs. Another challenge bit is determined by the 13-bit challenge to avoid fixed points.
+
 rule_test.py:
 the Python script to realize the proposed algorithm to select a suitable feedback polynomial without periodic oscillation.
 
