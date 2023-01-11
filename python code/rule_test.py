@@ -294,9 +294,6 @@ for i in range(8192):
 
 rule_all=abandon_rule1+abandon_rule2+abandon_rule3
 print("len_all",len(list(set(rule_all))))
-print("len_rule1", len(abandon_rule1))
-print("len_rule2", len(abandon_rule2))
-print("len_rule3", len(abandon_rule3))
 
 fit_rule1 = []
 unfit_rule1 = []
