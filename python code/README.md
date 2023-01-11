@@ -13,7 +13,7 @@ abandon: if abandon=1, the corresponding feedback polynomial should not be selec
 
 configuration parameters:
 1. delta: The tolerable variation of delay differences for periodicity conditions. A smaller value of delta represents a more stringent requirement, 
-which will cause less feedback polynomial to be detected and filtered.
+which will cause less feedback polynomials to be detected and filtered.
 2. DIV_min: the minimum value of DIVδ or DIVδ’. The proposed periodic conditions are easier to be satisfied with a smaller value of DIV_min, 
 which will cause more feedback polynomials to be detected and filtered. 
 However, a smaller value of DIV_min brings the signal of periodic oscillations closer to the glitch. 
