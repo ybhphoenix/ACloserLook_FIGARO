@@ -3,7 +3,7 @@
 ** Design library name: tsmc28_sim
 ** Design cell name: garo_351
 ** Design view name: schematic
-* transient noise analysis
+
 .option post probe
 .option runlvl=5
 
@@ -26,6 +26,7 @@
 
 .TRAN 1e-9 150e-9 START=0.0
 
+** transient noise analysis
 .trannoise v(net133) SWEEP MONTE=1 FIRSTRUN=2
 +FMAX=50G SCALE=10
 
@@ -36,6 +37,8 @@
 +    PARHIER=LOCAL
 +    PSF=2
 +    macmod=1
+
+** library files
 .lib "./spice_tsmc28/SPICE/tn28clsp079/1_0_2p9/cln28hpcp_1d8_elk_v1d0_2p9_shrink0d9_embedded_usage.l" TTMacro_MOS_MOSCAP
 .lib "./spice_tsmc28/SPICE/tn28clsp079/1_0_2p9/cln28hpcp_1d8_elk_v1d0_2p9_shrink0d9_embedded_usage.l" pre_simu
 .inc "./spice_sim/garo_2076_morebuf/tcbn28hpcplusbwp12t30p140_170a.spi"
