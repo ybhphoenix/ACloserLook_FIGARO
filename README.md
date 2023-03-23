@@ -18,7 +18,7 @@ The model is simulated with the technology TSMC 28nm. Two library files "cln28hp
 
 #### 1.2  Utilization
 
-After the configuration of environmental conditions and library, the utilization steps are listed as follows:
+After the configuration of environmental conditions and library, the utilization steps are listed as follows:<br />
         a) Construct the ring oscillator circuit by instantiating the cells in the file "tcbn28hpcplusbwp12t30p140_170a.spi".<br />
 	b) Adjust the aspect ratios or the number of instantiated cells to realize similar filtering or drive capabilities and the same delay relationships measured from FPGA or ASIC implementation. The simulated oscillation period of each loop in the example model is about 10% of the corresponding measured value in Table I in the paper, with the same delay relationships.<br />
 	c) The input connections of some AND gates are determined by the applied feedback polynomial to implement closed or open feedback paths.<br />
