@@ -33,6 +33,6 @@ A dataset is provided in the directory "original data", which includes the origi
 The summary graphs Figure 7 and Figure 9 displayed in the paper for all the feedback polynomials can be obtained from the original data. The entropy results are displayed with the feedback coefficient as the x-axis, and the Lyapunov exponent results are shown with the min-entropy as the x-axis. The categories in Figure 7 are consistent with the original data, where "mixed" corresponds to intermittent periodic oscillations. In Figure 9, the mixed situations are divided from intermittent periodic oscillations, where the duration of chaotic oscillation accounts for [75%, 100%) of the sampling time. The remaining intermittent periodic oscillations and continuous periodic oscillations are classified as the periodic situations. The summary graphs can verify the effectiveness of the selected threshold and modified detector to detect periodic oscillations for all the feedback polynomials, as proposed in Subsection 3.2 of the paper.
 
 ### 3  python code:
-The python script to implement the proposed Algorithm 2 in Subsection 6.1 to select a suitable feedback polynomial without periodic oscillation.
+The python script to implement the proposed Algorithm 2 in Subsection 6.1 to select a suitable feedback polynomial without periodic oscillation, which is described in detail in README.md in the directory "python code".
 
 
