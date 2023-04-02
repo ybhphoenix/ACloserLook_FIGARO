@@ -18,12 +18,12 @@ The model is simulated with the technology TSMC 28nm. Two library files "cln28hp
 
 #### 1.2  Utilization
 
-After the configuration of environmental conditions and library, the utilization steps are listed as follows:<br \>
-        a) Construct the ring oscillator circuit by instantiating the cells in the file "tcbn28hpcplusbwp12t30p140_170a.spi", as displayed in Figure 12 in the paper where buffers can also be implemented by AND gates with one input tied to VDD to imitate the delays of routes. The input connections of the AND gates instantiated to implement switches are determined by the applied feedback polynomial to implement closed or open feedback paths, with one input tied to GND or VDD.<br \>
-	b) Adjust the aspect ratios or the number of instantiated cells to realize similar filtering or drive capabilities and the same delay relationships measured from FPGA or ASIC implementation. The delay values can be obtained by measuring the oscillation periods of equivalent classical ring oscillators with the feedback polynomial f(x)=x^15+x^14+x^m+1 (m=1,2,...,13). The simulated oscillation period of each loop in the example model is about 10% of the corresponding measured value in Table I in the paper, with the same delay relationships.<br \>
-	c) The start signal as one input signal of the NAND gate is configured as a pwl (piece-wise linear) input stimulus to enable the oscillation.<br \>
-	d) Transient noise analysis is performed on the output signal of the ring oscillator to obtain the simulated waveforms for the cause analysis of periodic oscillations.<br \>
-	e) The tool HSPICE is applied to run the model with the instruction: hspice model.sp. The version of HSPICE used in this paper is HSPICE Version Q-2020.03-3.<br \>
+After the configuration of environmental conditions and library, the utilization steps are listed as follows:<br />
+        a) Construct the ring oscillator circuit by instantiating the cells in the file "tcbn28hpcplusbwp12t30p140_170a.spi", as displayed in Figure 12 in the paper where buffers can also be implemented by AND gates with one input tied to VDD to imitate the delays of routes. The input connections of the AND gates instantiated to implement switches are determined by the applied feedback polynomial to implement closed or open feedback paths, with one input tied to GND or VDD.<br />
+	b) Adjust the aspect ratios or the number of instantiated cells to realize similar filtering or drive capabilities and the same delay relationships measured from FPGA or ASIC implementation. The delay values can be obtained by measuring the oscillation periods of equivalent classical ring oscillators with the feedback polynomial f(x)=x^15+x^14+x^m+1 (m=1,2,...,13). The simulated oscillation period of each loop in the example model is about 10% of the corresponding measured value in Table I in the paper, with the same delay relationships.<br />
+	c) The start signal as one input signal of the NAND gate is configured as a pwl (piece-wise linear) input stimulus to enable the oscillation.<br />
+	d) Transient noise analysis is performed on the output signal of the ring oscillator to obtain the simulated waveforms for the cause analysis of periodic oscillations.<br />
+	e) The tool HSPICE is applied to run the model with the instruction: hspice model.sp. The version of HSPICE used in this paper is HSPICE Version Q-2020.03-3.<br />
 	
 ### 2  Dataset
 
